@@ -15,7 +15,7 @@ class Pokemon
 
   def self.save(id, name, type, db)
     self.new(id, name, type)
-    @db.execute("INSERT INTO pokemon(name, type, db)
+    db.execute("INSERT INTO pokemon(name, type, db)
     Pokemon.all.collect do |poke|
     Pokemon.save(poke.name, poke.type, poke.db)
     end
