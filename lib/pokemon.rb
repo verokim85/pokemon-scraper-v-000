@@ -12,8 +12,7 @@ class Pokemon
   end
 
   def self.find
-    Pokemon.all.each do |poke|
-      Pokemon.save(poke.name, poke.type, poke.db)
+    SELECT * FROM pokemon WHERE id = ;
   end
 end
 
