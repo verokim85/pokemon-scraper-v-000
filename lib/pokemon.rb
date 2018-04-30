@@ -18,7 +18,8 @@ class Pokemon
     Pokemon.new(poke[0], poke[1], poke[2])
   end
 
-
+  def self.hp 
+     db.excecute("ALTER TABLE pokemon ADD COLUMN hp INTEGER")
 
 
 end
