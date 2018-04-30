@@ -2,11 +2,11 @@ require 'pry'
 class Pokemon
   attr_accessor :id, :name, :type, :db, :hp
 
-  def initialize(id = nil, name= nil, type = nil, hp = nil, db = nil)
+  def initialize(id = nil, name= nil, type = nil, hp = nil)
     @id = id
     @name = name
     @type = type
-    @db = db
+    # @db = db
     @hp = hp
   end
 
