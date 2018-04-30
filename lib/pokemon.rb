@@ -15,7 +15,8 @@ class Pokemon
   end
 
   def alter_hp(hp, db)
-    Pokemon.find(id, db)
+    test = Pokemon.find(id, db).hp
+    test.hp = hp
     binding.pry
   end
 
