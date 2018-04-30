@@ -16,9 +16,9 @@ class Pokemon
 
   def self.find(id, db)
     poke = db.execute("SELECT * FROM pokemon WHERE id = id").flatten
-    pokes = db.execute("ALTER TABLE pokemon ADD COLUMN hp INTEGER")
-    Pokemon.new(pokes[0], pokes[1], pokes[2], pokes[3])
-    # binding.pry
+    poke("ALTER TABLE pokemon ADD COLUMN hp INTEGER")
+    Pokemon.new(poke[0], poke[1], poke[2], poke[3])
+    binding.pry
   end
 
 
