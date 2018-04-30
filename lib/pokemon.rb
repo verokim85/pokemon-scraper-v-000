@@ -16,6 +16,7 @@ class Pokemon
 
   def alter_hp(hp, db)
     self.find(id, db)
+    binding.pry
   end
 
   def self.find(id, db)
