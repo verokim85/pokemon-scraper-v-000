@@ -12,7 +12,9 @@ class Pokemon
   end
 
   def self.find
-  end 
+    Pokemon.all.each do |poke|
+      Pokemon.save(poke.name, poke.type, poke.db)
+  end
 
 
 end
