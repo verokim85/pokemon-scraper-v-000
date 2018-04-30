@@ -18,4 +18,7 @@ class Pokemon
     Pokemon.new(poke[0], poke[1], poke[2])
   end
 
+
+
+
 end
