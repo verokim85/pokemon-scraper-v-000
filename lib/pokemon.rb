@@ -15,7 +15,7 @@ class Pokemon
 
   def self.save(name, type, db)
     self.new(name)
-    pikachu_from_db VALUES (?,?,?) name, type, db)
+
 
   end
 
