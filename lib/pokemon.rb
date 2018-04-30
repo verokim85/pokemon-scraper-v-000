@@ -20,7 +20,7 @@ class Pokemon
   end
 
   def self.hp
-     db.excecute("ALTER TABLE pokemon ADD COLUMN hp INTEGER")
+     db.execute("ALTER TABLE pokemon ADD COLUMN hp INTEGER")
   end
 
 end
