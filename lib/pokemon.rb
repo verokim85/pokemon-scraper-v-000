@@ -13,8 +13,8 @@ class Pokemon
     @@all
   end
 
-  def self.save(name, type, db)
-    self.new(name, type, db)
+  def self.save(id, name, type)
+    self.new(id, name, type)
     @db.execute("INSERT INTO pokemon(name, type, db)
     Pokemon.all.collect do |poke|
     Pokemon.save(poke.name, poke.type, poke.db)
