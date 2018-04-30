@@ -17,6 +17,7 @@ class Pokemon
   def self.find(id, db)
     poke = db.execute("SELECT * FROM pokemon WHERE id = id").flatten
     Pokemon.new(poke[0], poke[1], poke[2], 60)
+    binding.pry
   end
 
 
