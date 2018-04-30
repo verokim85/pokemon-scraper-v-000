@@ -15,6 +15,7 @@ class Pokemon
     Pokemon.all.each do |poke|
       Pokemon.save(poke.name, poke.type, poke.db)
   end
+end
 
 
 end
