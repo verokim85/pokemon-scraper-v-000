@@ -18,7 +18,7 @@ class Pokemon
     poke = db.execute("SELECT * FROM pokemon WHERE id = id").flatten
     pokes = poke("ALTER TABLE pokemon ADD COLUMN hp INTEGER")
     Pokemon.new(pokes[0], pokes[1], pokes[2], pokes[3])
-    binding.pry
+    # binding.pry
   end
 
 
