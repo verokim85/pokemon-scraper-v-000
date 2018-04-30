@@ -10,13 +10,13 @@ class Pokemon
     @hp = hp
   end
 
-  def self.save(name, type, 60, db)
-    db.execute("INSERT INTO pokemon(name, type, hp) VALUES (?, ?, ?)",name, type, hp)
+  def self.save(name, type, db)
+    db.execute("INSERT INTO pokemon(name, type) VALUES (?, ?)",name, type)
   end
 
   def self.find(id, db)
     poke = db.execute("SELECT * FROM pokemon WHERE id = id").flatten
-   Pokemon.new(poke[0], poke[1], poke[2], poke[3])
+   Pokemon.new(poke[0], poke[1], poke[2], 60)
   end
 
 
