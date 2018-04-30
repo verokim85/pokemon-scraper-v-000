@@ -18,6 +18,7 @@ class Pokemon
     self.new(name)
     "INSERT INTO pokemon(id, name, type) VALUES (?, ?, ?)", id, name, type
   end
+end 
 
 
 end
